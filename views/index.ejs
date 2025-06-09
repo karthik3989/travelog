@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelog Site</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<body>
+
+<%- include("partials/header.ejs") %>
+
+    <h1 id="siteTitle">TRAVELOG</h1>
+
+    <img src="images/beach-view.jpg" alt="mount fuji" class="col-9" />
+
+    <div class="container" id="grid">
+        <div class="blog1">
+            <h2>Enchanting Mysteries of South India</h2>
+            <h6>Posted by Michael</h6>
+            <p>To traverse beyond the limitations of my mind, I travel to look upon the journey within myself. With these thoughts, I set off on an adventure of a lifetime. A voyage to the mysterious beauties that unravel the most amazing parts of my country. A travelogue to capture the ‘Incredible India’ down South.</p>
+            <p>My visit to Tamil Nadu, Pondicherry and Kerala had begun. I had heard from my friends, people didn’t speak anything else but their local languages out there. That made me equally foreign to these lands as anyone else who came from any other country.  To me, this was a challenge and a trip that would be monumental after I had completed it. With solitude on my side, I had decided to explore over 17 superb locations in 15 days. Most importantly, I was going to discover the beautiful culture South India had to offer and document each and every location as a journal on my blog. With a Vernian, inspiration l had to ensure this journey went down in my books as the best one!</p>
+        </div>
+        <div class="blog2">
+            <h2>Mt. Fuji: Japan’s Iconic Mountain</h2>
+            <h6>Posted by Ram</h6>
+            <p>No mountain in Japan, and maybe even the world, is quite as spectacular as Mt. Fuji. We challenge you to find a list of the most beautiful mountains in the world without Fuji being in the top 10! Anyways, it gained its fame for many reasons- one of course being its surreally “perfect” shape.</p>
+        </div>
+        <div class="blog3">
+            <h2>Visit the Spectacular Dolomites (in June)</h2>
+            <h6>Posted by Keerthi</h6>
+            <p>June is the best time of year to visit the Dolomites. The early summer season is marked by picturesque wildflower filled meadows that can be enjoyed over long, pleasantly warm days thanks to the extended daylight hours at this time of year.</p>
+        </div>
+
+    </div>
+
+
+    
+
+    <%- include("partials/blog.ejs") %>
+<!--
+    <div class="container">
+        <div class="buttonArea">
+          <a href="/new-blog">
+            <button type="submit" method="post" class="btn btn-primary btn-lg px-4 gap-3">
+              Create a new blog post
+            </button>
+          </a>
+        </div>
+    </div>
+-->
+
+    <%- include("partials/footer.ejs") %>
+
+
+ 
+
+
+</body>
+</html>

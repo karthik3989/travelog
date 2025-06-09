@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    
+
+
+  <% function addBlog() { %>
+    <% for (i=0; i<blogs.length; i=i+1) { %>
+      <% blogs[i].id=i+1 %>
+      <h2> <%= blogs[i].postTitle %> </h2>
+      <h6> Posted by <%= blogs[i].postName %> </h6>
+      <p> <%= blogs[i].postContent %> </p>
+       <div class="blogButton mb-3">
+        <a href="/edit/<%= blogs[i].id %>">
+            <button id="editButton" class="btn btn-primary px-4 gap-3">
+              Edit this Blog
+            </button>
+          </a>
+
+          <form action="/delete/<%= blogs[i].id %>" method="post">
+            <button id="delButton" type="submit" value="delete" class="btn btn-primary px-4 gap-3">
+              Delete this Blog
+            </button>
+          </form>
+      </div>
+  <% }}; %>
+
+    <% if (locals.blogs){ %>
+            <div class="container userBlog col-9.5 px-5">
+           <%= addBlog(); %>
+            
+            
+            </div>
+        <% } %>
+
+</body>
+</html>

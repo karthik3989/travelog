@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+
+<%- include("partials/header.ejs") %>
+
+  <h1>Edit Blog</h1>
+<div class="container postBlog mt-5">
+  <form action="/edit/<%= blogObj.id %>" method="post">
+    <div class="input">
+      <textarea name="newName" rows="1" cols="150" class="col-9" required><%= blogObj.postName %></textarea>
+    </div>
+    <div class="input">
+        <textarea name="newTitle" rows="1" cols="150" class="col-9" required><%= blogObj.postTitle %></textarea>
+    </div>
+    <div class="input" id="blogInput">
+        <textarea name="newContent" rows="10" cols="150" class="col-9" maxlength="2000" required><%= blogObj.postContent %></textarea>
+    </div>
+    <input type="submit" value="Update Blog" class="btn btn-primary px-4 gap-3" id="blogButton">
+  </form>
+</div>
+
+
+<%- include("partials/footer.ejs") %>
+</body>
+</html>

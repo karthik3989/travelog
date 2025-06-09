@@ -1,0 +1,102 @@
+#grid{
+    display: grid;
+    gap: 3rem;
+    padding: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: justify;
+}
+.blog1{
+    grid-row: span 2;
+}
+span.fs-4{
+    font-family: trajan pro;
+    font-weight: 600;
+    text-align: center;
+}
+#siteTitle{
+    font-family: trajan pro;
+    font-weight: 500;
+    text-align: center;
+}
+.buttonArea{
+    display: flex;
+    justify-content: center;
+    margin-top: -8rem;
+    margin-bottom: 2.5rem;
+}
+img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1.5rem;
+    border-radius: 1%;
+}
+.postBlog{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+}
+.input>input{
+    width: 70rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+h3{
+    text-align: center;
+}
+.userBlog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: -3rem;
+    text-align: justify;
+}
+h1,#centerHeading{
+    text-align: center;
+}
+.blogButton{
+    display: flex;
+    gap: 3rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    justify-self: center;
+}
+@media (max-width:767px){
+  #grid,.siteHead{
+    display: flex;
+    flex-direction: column;
+  }
+  .userBlog{
+    margin-top: 2rem;
+  }
+}
+body{
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    background-color: rgb(241, 244, 247)  !important;
+}
+#delButton,#editButton{
+    border-radius: 5%;
+}
+.userBlog>h2{
+    margin-top: 1rem;
+}
+p{
+    margin-bottom: 0% !important;
+}
+.postBlog>h1,.postBlog>input,.postBlog>textarea{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:560px){
+    .blogButton{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+
+
+<h1>Create a new blog post</h1>
+<div class="container postBlog mt-5">
+  <form action="submit" method="post">
+    <div class="input">
+      <textarea name="blogOwner" rows="1" cols="150" class="col-9">Enter your name here</textarea>
+    </div>
+    <div class="input">
+        <textarea name="title" rows="1" cols="150" class="col-9">Enter your blog title here</textarea>
+    </div>
+    <div class="input" id="blogInput">
+        <textarea name="content" rows="10" cols="150" class="col-9" maxlength="2000">Enter your blog content here</textarea>
+    </div>
+    <input type="submit" value="post" class="btn btn-primary btn-lg px-4 gap-3" id="blogButton">
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
